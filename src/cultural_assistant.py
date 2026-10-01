@@ -1,10 +1,13 @@
 import re
-from search import search_artifacts
+from search import (
+    search_artifacts,
+    search_regions,
+    search_traditions,
+    search_dances
+)
 
 
 def extract_search_term(question):
-    """Extract the likely artifact name from a visitor question."""
-
     question = question.strip()
 
     patterns = [
@@ -17,58 +20,97 @@ def extract_search_term(question):
 
     for pattern in patterns:
         match = re.search(pattern, question, re.IGNORECASE)
-
         if match:
             return match.group(1).strip()
 
     return question.rstrip("?").strip()
 
 
+def safe_value(value):
+    if value is None:
+        return "Not specified"
+
+    value = str(value)
+
+    if value.lower() == "nan":
+        return "Not specified"
+
+    return value
+
+
 def answer_question(question):
     search_term = extract_search_term(question)
 
+    # Search artifacts
     results = search_artifacts(search_term)
 
-    if results.empty:
-        return (
-            f"I could not find information about '{search_term}' "
-            "in the cultural artifact collection."
-        )
-
-    # Prefer an exact artifact-name match
-    exact = results[
-        results["artifact_name"]
-        .fillna("")
-        .str.lower()
-        .str.strip()
-        == search_term.lower().strip()
-    ]
-
-    if not exact.empty:
-        artifact = exact.iloc[0]
-    else:
+    if not results.empty:
         artifact = results.iloc[0]
 
-    name = artifact["artifact_name"]
-    category = artifact["category"]
-    description = artifact["description"]
-    material = artifact["material"]
-    traditional_use = artifact["traditional_use"]
+        return (
+            f"Artifact: {safe_value(artifact['artifact_name'])}\n\n"
+            f"Category: {safe_value(artifact['category'])}\n\n"
+            f"Description: {safe_value(artifact['description'])}\n\n"
+            f"Material: {safe_value(artifact['material'])}\n\n"
+            f"Traditional Use: {safe_value(artifact['traditional_use'])}"
+        )
 
-    answer = (
-        f"{name} is an artifact in the {category} category.\n\n"
-        f"Description: {description}\n\n"
-        f"Material: {material}\n\n"
-        f"Traditional Use: {traditional_use}"
+    # Search regions
+    results = search_regions(search_term)
+
+    if not results.empty:
+        region = results.iloc[0]
+
+        return (
+            f"Region: {safe_value(region['region_name'])}\n\n"
+            f"Location: {safe_value(region['country_location'])}\n\n"
+            f"Description: {safe_value(region['description'])}\n\n"
+            f"Communities: {safe_value(region['communities'])}\n\n"
+            f"Related Traditions: {safe_value(region['related_traditions'])}"
+        )
+
+    # Search traditions
+    results = search_traditions(search_term)
+
+    if not results.empty:
+        tradition = results.iloc[0]
+
+        return (
+            f"Tradition: {safe_value(tradition['tradition_name'])}\n\n"
+            f"Description: {safe_value(tradition['description'])}\n\n"
+            f"Community: {safe_value(tradition['community'])}\n\n"
+            f"Cultural Significance: "
+            f"{safe_value(tradition['cultural_significance'])}\n\n"
+            f"Occasion: {safe_value(tradition['occasion'])}"
+        )
+
+    # Search dances
+    results = search_dances(search_term)
+
+    if not results.empty:
+        dance = results.iloc[0]
+
+        return (
+            f"Dance / Performance: {safe_value(dance['dance_name'])}\n\n"
+            f"Description: {safe_value(dance['description'])}\n\n"
+            f"Community: {safe_value(dance['community'])}\n\n"
+            f"Occasion / Purpose: "
+            f"{safe_value(dance['occasion_purpose'])}"
+        )
+
+    return (
+        f"I could not find information about '{search_term}' "
+        "in the cultural collection."
     )
-
-    return answer
 
 
 if __name__ == "__main__":
     print("AI Cultural Assistant")
     print("---------------------")
-    print("Ask me about an artifact in the collection.")
+    print(
+        "Ask me about artifacts, dances, regions, "
+        "or traditions."
+    )
     print("Type 'exit' to stop.\n")
 
     while True:

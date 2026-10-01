@@ -2,44 +2,104 @@ import pandas as pd
 from data_loader import load_all_data
 
 
-def search_artifacts(query):
-    data = load_all_data()
-    artifacts = data["artifacts"]
-
+def search_dataframe(dataframe, query, columns):
+    """Search selected columns of a dataframe."""
     query = query.lower().strip()
 
-    searchable_columns = [
-        "artifact_name",
-        "category",
-        "description",
-        "material",
-        "traditional_use"
-    ]
+    mask = pd.Series(False, index=dataframe.index)
 
-    mask = pd.Series(False, index=artifacts.index)
+    for column in columns:
+        if column in dataframe.columns:
+            mask = mask | (
+                dataframe[column]
+                .fillna("")
+                .astype(str)
+                .str.lower()
+                .str.contains(query, regex=False)
+            )
 
-    for column in searchable_columns:
-        mask = mask | artifacts[column].fillna("").astype(str).str.lower().str.contains(
-            query, regex=False
-        )
+    return dataframe[mask]
 
-    return artifacts[mask]
+
+def search_artifacts(query):
+    data = load_all_data()
+
+    return search_dataframe(
+        data["artifacts"],
+        query,
+        [
+            "artifact_name",
+            "category",
+            "description",
+            "material",
+            "traditional_use"
+        ]
+    )
+
+
+def search_regions(query):
+    data = load_all_data()
+
+    return search_dataframe(
+        data["regions"],
+        query,
+        [
+            "region_name",
+            "country_location",
+            "description",
+            "communities",
+            "languages"
+        ]
+    )
+
+
+def search_traditions(query):
+    data = load_all_data()
+
+    return search_dataframe(
+        data["traditions"],
+        query,
+        [
+            "tradition_name",
+            "description",
+            "community",
+            "cultural_significance",
+            "occasion"
+        ]
+    )
+
+
+def search_dances(query):
+    data = load_all_data()
+
+    return search_dataframe(
+        data["dances"],
+        query,
+        [
+            "dance_name",
+            "description",
+            "community",
+            "occasion_purpose",
+            "music_instruments",
+            "clothing"
+        ]
+    )
 
 
 if __name__ == "__main__":
-    query = input("Search for an artifact: ")
+    print("Cultural Information Search")
+    print("---------------------------")
 
-    results = search_artifacts(query)
+    query = input("Search: ")
 
-    if results.empty:
-        print("\nNo matching artifact found.")
-    else:
-        print(f"\nFound {len(results)} matching artifact(s):\n")
+    print("\nARTIFACTS")
+    print(search_artifacts(query).to_string(index=False))
 
-        for _, artifact in results.iterrows():
-            print(f"Name: {artifact['artifact_name']}")
-            print(f"Category: {artifact['category']}")
-            print(f"Description: {artifact['description']}")
-            print(f"Material: {artifact['material']}")
-            print(f"Traditional Use: {artifact['traditional_use']}")
-            print("-" * 50)
+    print("\nREGIONS")
+    print(search_regions(query).to_string(index=False))
+
+    print("\nTRADITIONS")
+    print(search_traditions(query).to_string(index=False))
+
+    print("\nDANCES")
+    print(search_dances(query).to_string(index=False))
