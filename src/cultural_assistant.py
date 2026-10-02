@@ -41,6 +41,40 @@ def safe_value(value):
 def answer_question(question):
     search_term = extract_search_term(question)
 
+    # Prioritize an exact dance-name match
+    dance_results = search_dances(search_term)
+
+    if not dance_results.empty:
+        exact_dances = dance_results[
+            dance_results["dance_name"]
+            .fillna("")
+            .str.lower()
+            .str.strip()
+            == search_term.lower().strip()
+        ]
+
+        if not exact_dances.empty:
+            dance = exact_dances.iloc[0]
+
+            return (
+                f"Dance / Performance: {safe_value(dance['dance_name'])}\n\n"
+                f"Description: {safe_value(dance['description'])}\n\n"
+                f"Region: {safe_value(dance['region'])}\n\n"
+                f"Community: {safe_value(dance['community'])}\n\n"
+                f"Clothing: {safe_value(dance['clothing'])}\n\n"
+                f"Music / Instruments: "
+                f"{safe_value(dance['music_instruments'])}\n\n"
+                f"Movements: {safe_value(dance['movements'])}\n\n"
+                f"Occasion / Purpose: "
+                f"{safe_value(dance['occasion_purpose'])}\n\n"
+                f"Historical Significance: "
+                f"{safe_value(dance['historical_significance'])}\n\n"
+                f"Video / Image Reference: "
+                f"{safe_value(dance['video_image_reference'])}\n\n"
+                f"Validation Status: "
+                f"{safe_value(dance['validation_status'])}"
+            )
+
     # Search artifacts
     results = search_artifacts(search_term)
 
@@ -84,8 +118,6 @@ def answer_question(question):
             f"Occasion: {safe_value(tradition['occasion'])}"
         )
 
-    # Search dances
-    results = search_dances(search_term)
     # Search dances
     results = search_dances(search_term)
 
