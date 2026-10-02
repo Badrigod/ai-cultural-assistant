@@ -15,19 +15,21 @@ st.set_page_config(
 st.title("🏛️ AI Cultural Assistant")
 
 st.write(
-    "Welcome! Ask questions about cultural artifacts in the collection."
+    "Welcome! Explore cultural information about artifacts, "
+    "dances, regions, and traditions in the collection."
 )
 
 st.info(
     "Try questions such as: "
     "'What is Dhiil?', "
-    "'Tell me about Dambiil', or "
-    "'What is Kebed/Kabad?'"
+    "'Tell me about Dhaanto', "
+    "'Tell me about Afgooye', or "
+    "'What is Xeer Ciise?'"
 )
 
 question = st.text_input(
     "Ask a cultural question:",
-    placeholder="What is Dhiil?"
+    placeholder="Tell me about Dhaanto"
 )
 
 if st.button("Ask Assistant"):
