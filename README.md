@@ -23,7 +23,7 @@ The cultural knowledge base is organized into five main datasets:
 
 | Dataset | Purpose | Current Records |
 |---|---|---:|
-| Artifacts | Stores information about cultural objects | 39 |
+| Artifacts | Stores information about cultural objects | 29 |
 | Dances | Stores dance, ritual, and performance information | 20 |
 | Regions | Organizes geographic and cultural areas | 8 |
 | Traditions | Stores cultural traditions and practices | 2 |
@@ -101,7 +101,7 @@ A Streamlit application provides a simple visitor-facing interface where visitor
 
 The current prototype contains:
 
-- 39 artifact records
+- 29 artifact records
 - 20 dance and performance records
 - 8 region records
 - 2 tradition records
