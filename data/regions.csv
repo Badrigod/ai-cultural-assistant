@@ -1,2 +1,9 @@
 region_id,region_name,country_location,description,communities,languages,related_artifacts,related_dances,related_traditions,source_id
-R001,Horn of Africa,Ethiopia; Djibouti; Somalia,Regional context represented in the cultural information structure,Somali and Somali-Issa communities,,,,T001,S001; S002
+R001,Northern / Northwestern Somali Areas,"Northern and northwestern Somali areas","Northern and northwestern cultural areas represented by dance traditions in the working database","Northern Somali and coastal communities",Somali,,"D003; D004",,S004
+R002,Central / South-Central Somalia,"Central and south-central Somalia","Central and south-central cultural areas represented in the dance database","Central and southern Somali communities",Somali,,"D005; D006",,S004
+R003,Southern / Riverine Somalia,"Southern Somalia and riverine areas","Southern and riverine cultural areas represented in the dance database","Southern and riverine communities",Somali,,"D008; D009",,S004
+R004,Banaadir / Southern Coastal Areas,"Banaadir and southern coastal areas","Coastal cultural area associated with Banaadiri performance traditions","Banaadiri communities",Somali,,D007,,S004
+R005,Lower Juba / Southern Coastal Islands,"Lower Juba and southern coastal islands","Southern coastal and island cultural area represented by Baajuni dance traditions","Baajuni communities",Somali,,D010,,S004
+R006,Afgooye / Lower Shabelle,"Afgooye, Lower Shabelle","Local cultural area represented by the Istunka festive performance tradition","Communities of the Afgooye area",Somali,,D017,,S004
+R007,Across Somali Communities,"Across Somali communities","Traditions represented across multiple Somali regions rather than one specific locality","Various Somali communities",Somali,,"D002; D016; D019; D020",,S004
+R008,Location Pending Validation,"To be validated","Location has not yet been sufficiently confirmed in the working cultural database","Community association may also require confirmation",Somali,,"D012; D013; D014; D015; D018",,S004
