@@ -55,12 +55,29 @@ def search_regions(query):
 
 def search_traditions(query):
     data = load_all_data()
+    traditions = data["traditions"].copy()
+
+    # Exclude records without verified supporting sources
+    if "validation_status" in traditions.columns:
+        traditions = traditions[
+            traditions["validation_status"]
+            .fillna("")
+            .str.lower()
+            .ne("pending source verification")
+        ]
+
+    # Keep newly researched hospitality content out of
+    # public answers until cultural review is complete.
+    traditions = traditions[
+        traditions["tradition_id"] != "T003"
+    ]
 
     return search_dataframe(
-        data["traditions"],
+        traditions,
         query,
         [
             "tradition_name",
+            "tradition_category",
             "description",
             "community",
             "cultural_significance",

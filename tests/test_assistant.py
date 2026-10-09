@@ -38,3 +38,10 @@ def test_tradition_xeer_ciise():
 def test_unknown_question():
     response = answer_question("Tell me about ExampleUnknownRecord")
     assert "could not find information" in response.lower()
+
+
+def test_somali_hospitality_pending_review():
+    response = answer_question(
+        "Tell me about Somali Hospitality and Guest Traditions"
+    )
+    assert "could not find information" in response.lower()
