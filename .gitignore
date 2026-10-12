@@ -10,3 +10,6 @@ waberi_integration.zip
 xedho_pilot.zip
 # Local pilot databases
 instructor-week2/**/events.sqlite3
+
+# Private QR code testing evidence
+instructor-week2/xedho_pilot/evidence/qr_tests/
