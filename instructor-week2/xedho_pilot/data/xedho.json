@@ -1,0 +1,116 @@
+{
+  "artifact_id": "KHH-005",
+  "name_so": "Xedho",
+  "name_en": "Xedho",
+  "inventory_row": 6,
+  "status": "draft",
+  "approval": {
+    "reviewer": "",
+    "date": "",
+    "notes": ""
+  },
+  "image": {
+    "path": "assets/xedho.png",
+    "caption": "Photograph supplied for the Xedho pilot; description pending review.",
+    "owner": "",
+    "permission": "unconfirmed"
+  },
+  "observed_visual_features": "The supplied photograph shows a decorated brown object with a narrow middle and widened top and base. Confirm the artifact identity and description with the museum.",
+  "origin": "",
+  "materials": "Gourd or wooden vessel, leather/hide, cowrie shells",
+  "traditional_use": "Used for collecting, carrying and storing.",
+  "cultural_significance": "UNESCO documents Xeedho as a wedding tradition in Djibouti involving a decorated container, food prepared by the bride's family, and an exchange that brings families together. This provides cultural context for the name Xedho, but the museum has not confirmed that artifact KHH-005 was used in this ceremony or whether this example has a gourd or wooden base.",
+  "story_so": "Xedho waxaa diiwaanka la bixiyey loogu aqoonsaday shayga lambarkiisu yahay 5. Diiwaanku wuxuu ku tilmaamayaa weel lagu ilaaliyey laguna qurxiyey maqaar, xarigyo iyo qolofka cowrie. Agabka lagu qoray waa weel u samaysan midho qalalan ama alwaax, maqaar iyo qolofka cowrie. Ujeeddada la qoray waa wax ururin, qaadid iyo kaydin. Diiwaanku ma sheegin waxa la ururin jiray ama la kaydin jiray, mana xaqiijin in weelkan gaarka ahi ka samaysan yahay midho qalalan ama alwaax. Qoraalkan Soomaaliga ah waa tusaale u baahan dib-u-eegis.",
+  "story_en": "Xedho is identified as artifact 5 in the supplied inventory. The inventory describes a vessel protected and decorated with leatherwork, straps and cowrie shells. It lists the materials as a gourd or wooden vessel, leather or hide, and cowrie shells. Its stated traditional use is collecting, carrying and storing. The inventory does not say what was collected or stored, or establish whether this example is made from gourd or wood.",
+  "transcript_so": "",
+  "transcript_en": "",
+  "sources": [
+    {
+      "id": "INV-005",
+      "title": "Artifacts.xlsm — inventory ID 5, row 6",
+      "location": "Supplied practicum inventory; Sheet1 row 6",
+      "approved": false,
+      "source_category": "Draft / unverified",
+      "note": "Inventory source only; cultural and translation review pending."
+    },
+    {
+      "id": "UNESCO-02001",
+      "title": "Xeedho — UNESCO Intangible Cultural Heritage",
+      "location": "https://ich.unesco.org/en/USL/xeedho-02001",
+      "approved": false,
+      "source_category": "UNESCO / official source",
+      "note": "Cultural context for the Xeedho tradition; connection to this photographed object awaits museum review."
+    },
+    {
+      "id": "UNESCO-VIDEO-66664",
+      "title": "Video: Xeedho",
+      "location": "https://ich.unesco.org/en/video/66664",
+      "source_category": "UNESCO / official source",
+      "approved": false,
+      "note": "The audio in assets/xedho_process.m4a was recorded from the sound of this UNESCO-hosted video. Video credit: © Ministère de la jeunesse et de la culture, Djibouti, 2022. Transcript, and museum review pending. Private draft only."
+    }
+  ],
+  "inventory_id": 5,
+  "category": "Clothing & Textiles",
+  "brief_description": "Vessel protected and decorated with leatherwork, straps and cowrie shells.",
+  "inventory_review": {
+    "status": "user-confirmed match to inventory ID 5",
+    "notes": "Material alternatives and the object of storing remain unresolved; category should be checked with the museum."
+  },
+  "passages": [
+    {
+      "source_id": "INV-005",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory describes Xedho as a vessel protected and decorated with leatherwork, straps and cowrie shells.",
+      "keywords": "description appearance look",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-005",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory lists materials as a gourd or wooden vessel, leather or hide, and cowrie shells; it does not confirm which base material this example uses.",
+      "keywords": "material made of",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-005",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory says it was used for collecting, carrying and storing, without specifying what was collected or stored.",
+      "keywords": "use used purpose store collect carry",
+      "intent": "use"
+    },
+    {
+      "source_id": "INV-005",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu Xedho ku tilmaamayaa weel lagu qurxiyey maqaar, xarigyo iyo qolofka cowrie.",
+      "keywords": "sharaxaad muuqaalka",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-005",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Agabka diiwaanka lagu qoray waa weel u samaysan midho qalalan ama alwaax, maqaar iyo qolofka cowrie; midka weelkan gaarka ahi ka samaysan yahay lama xaqiijin.",
+      "keywords": "agab ka samaysan yahay",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-005",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu sheegay in loo adeegsan jiray ururin, qaadid iyo kaydin, balse ma sheegin waxa la ururin jiray ama la kaydin jiray.",
+      "keywords": "isticmaalaa isticmaal ururin",
+      "intent": "use"
+    }
+  ]
+}

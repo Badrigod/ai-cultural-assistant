@@ -1,0 +1,115 @@
+
+{
+  "artifact_id": "KHH-002",
+  "name_so": "Dambiil",
+  "name_en": "Dambiil",
+  "inventory_id": 2,
+  "inventory_row": 3,
+  "status": "draft",
+
+  "approval": {
+    "reviewer": "",
+    "date": "",
+    "notes": ""
+  },
+
+  "image": {
+    "path": "assets/dambiil.png",
+    "caption": "Photograph for the Dambiil record; description pending review.",
+    "owner": "",
+    "permission": "unconfirmed"
+  },
+
+  "observed_visual_features": "",
+  "origin": "",
+
+  "materials": "Woven plant fibers",
+
+  "traditional_use": "Used to store or serve dry foods and household or personal items.",
+
+  "cultural_significance": "",
+
+  "story_so": "Dambiil waa shayga labaad ee ku qoran diiwaanka madxafka. Diiwaanku wuxuu ku tilmaamayaa dambiil gacmeed la tolay oo aan qoto dheerayn, leh sal kor u taagan iyo dabool weyn oo qaab koon ah. Waxaa laga sameeyey fiilooyin dhir la tolay. Waxaa loo isticmaali jiray kaydinta ama bixinta cuntooyinka qalalan iyo alaabta guriga ama agabka shakhsiga ah.",
+
+  "story_en": "Dambiil is identified as artifact 2 in the supplied inventory. It is described as a shallow woven basket with a pedestal base and a large fitted conical lid. The inventory identifies woven plant fibers as its material. Traditionally, it was used to store or serve dry foods and household or personal items.",
+
+  "transcript_so": "",
+  "transcript_en": "",
+
+  "sources": [
+    {
+      "id": "INV-002",
+      "title": "Artifacts(2).xlsm - inventory ID 2, row 3",
+      "location": "Supplied practicum inventory; Sheet1 row 3",
+      "approved": false,
+      "source_category": "Draft / unverified",
+      "note": "Inventory source only; cultural and translation review pending."
+    }
+  ],
+
+  "category": "Containers & Storage",
+
+  "brief_description": "Shallow woven basket with pedestal base and large fitted conical lid.",
+
+  "inventory_review": {
+    "status": "matched to inventory ID 2",
+    "notes": "Draft record prepared from the supplied inventory. Cultural and translation review remain pending."
+  },
+
+  "passages": [
+    {
+      "source_id": "INV-002",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory describes Dambiil as a shallow woven basket with a pedestal base and a large fitted conical lid.",
+      "keywords": "description appearance basket lid",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-002",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory lists woven plant fibers as the material used for Dambiil.",
+      "keywords": "material made of woven",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-002",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "Dambiil was used to store or serve dry foods and household or personal items.",
+      "keywords": "use purpose storage dry food",
+      "intent": "use"
+    },
+    {
+      "source_id": "INV-002",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu Dambiil ku tilmaamayaa dambiil aan qoto dheerayn oo leh sal kor u taagan iyo dabool weyn oo qaab koon ah.",
+      "keywords": "sharaxaad muuqaalka",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-002",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu sheegayaa in Dambiil laga sameeyey fiilooyin dhir la tolay.",
+      "keywords": "agab ka samaysan yahay",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-002",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Dambiil waxaa loo isticmaali jiray kaydinta ama bixinta cuntooyinka qalalan iyo alaabta guriga ama agabka shakhsiga ah.",
+      "keywords": "isticmaalka kaydinta cunto",
+      "intent": "use"
+    }
+  ]
+}

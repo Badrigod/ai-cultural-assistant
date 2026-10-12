@@ -1,0 +1,115 @@
+
+{
+  "artifact_id": "KHH-004",
+  "name_so": "Jalxaad",
+  "name_en": "Jalxaad",
+  "inventory_id": 4,
+  "inventory_row": 5,
+  "status": "draft",
+
+  "approval": {
+    "reviewer": "",
+    "date": "",
+    "notes": ""
+  },
+
+  "image": {
+    "path": "assets/jalxaad.png",
+    "caption": "Photograph for the Jalxaad record; description pending review.",
+    "owner": "",
+    "permission": "unconfirmed"
+  },
+
+  "observed_visual_features": "",
+  "origin": "",
+
+  "materials": "Fired clay/terracotta",
+
+  "traditional_use": "Used primarily for storing and cooling drinking water and possibly other liquids.",
+
+  "cultural_significance": "",
+
+  "story_so": "Jalxaad waa shayga afraad ee ku qoran diiwaanka madxafka. Diiwaanku wuxuu ku tilmaamayaa weel dhoobo la gubay ka samaysan, leh qaab wareegsan, qoor dhuuban, laba meelood oo kor u taagan oo lagu qabto iyo qurxin lagu xardhay dusha sare. Waxaa ugu horrayn loo isticmaali jiray kaydinta iyo qaboojinta biyaha la cabo. Diiwaanku wuxuu sidoo kale tilmaamayaa in laga yaabo in lagu kaydin jiray dareerayaal kale. Faahfaahinta dheeraadka ah waxay sugaysaa dib-u-eegis dhaqameed.",
+
+  "story_en": "Jalxaad is identified as artifact 4 in the supplied inventory. It is described as a rounded vessel made from fired clay or terracotta, featuring a narrow neck, two raised handles and incised decoration. According to the inventory, it was primarily used for storing and cooling drinking water and possibly other liquids. Additional cultural interpretation remains subject to review.",
+
+  "transcript_so": "",
+  "transcript_en": "",
+
+  "sources": [
+    {
+      "id": "INV-004",
+      "title": "Artifacts(2).xlsm - inventory ID 4, row 5",
+      "location": "Supplied practicum inventory; Sheet1 row 5",
+      "approved": false,
+      "source_category": "Draft / unverified",
+      "note": "Inventory source only. Category and cultural interpretation require review."
+    }
+  ],
+
+  "category": "Clothing & Textiles",
+
+  "brief_description": "Rounded clay vessel with narrow neck, two raised handles and incised decoration.",
+
+  "inventory_review": {
+    "status": "matched to inventory ID 4",
+    "notes": "The spreadsheet categorizes Jalxaad under Clothing & Textiles. Since its description identifies a clay vessel, the classification requires museum review. Its potential use for liquids other than drinking water is also unconfirmed."
+  },
+
+  "passages": [
+    {
+      "source_id": "INV-004",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory describes Jalxaad as a rounded clay vessel with a narrow neck, two raised handles and incised decoration.",
+      "keywords": "description appearance vessel handles",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-004",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory identifies fired clay or terracotta as the material used to make Jalxaad.",
+      "keywords": "material clay terracotta made of",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-004",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "Jalxaad was primarily used for storing and cooling drinking water and possibly other liquids.",
+      "keywords": "use water storage cooling purpose",
+      "intent": "use"
+    },
+    {
+      "source_id": "INV-004",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu Jalxaad ku tilmaamayaa weel dhoobo ah oo wareegsan, leh qoor dhuuban, laba meelood oo kor u taagan oo lagu qabto iyo qurxin lagu xardhay dusha sare.",
+      "keywords": "sharaxaad muuqaalka",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-004",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu sheegayaa in Jalxaad laga sameeyey dhoobo la gubay.",
+      "keywords": "agab dhoobo ka samaysan yahay",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-004",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Jalxaad waxaa ugu horrayn loo isticmaali jiray kaydinta iyo qaboojinta biyaha la cabo, waxaana laga yaabaa in lagu kaydin jiray dareerayaal kale.",
+      "keywords": "isticmaalka biyo qaboojin kaydin",
+      "intent": "use"
+    }
+  ]
+}

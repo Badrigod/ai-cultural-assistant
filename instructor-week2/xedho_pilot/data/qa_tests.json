@@ -1,0 +1,18 @@
+[
+  {
+    "question": "What is its traditional use?",
+    "expected_before_approval": "unavailable"
+  },
+  {
+    "question": "Where did it originate?",
+    "expected_before_approval": "unavailable"
+  },
+  {
+    "question": "What is it made from?",
+    "expected_before_approval": "unavailable"
+  },
+  {
+    "question": "Is this claim in the approved sources?",
+    "expected_before_approval": "unavailable"
+  }
+]

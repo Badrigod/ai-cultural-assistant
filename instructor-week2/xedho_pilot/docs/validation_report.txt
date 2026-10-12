@@ -1,0 +1,44 @@
+KHAYRHAYE LIVING HERITAGE
+Pilot Artifacts 001-005 - Updated Validation Report
+==========================================
+
+------------------------------------------
+Checking: dhiil
+JSON syntax: VALID
+Artifact: KHH-001 Dhiil
+Release readiness: BLOCKED
+ - Image permission is unconfirmed
+ - Museum approval is pending
+
+------------------------------------------
+Checking: dambiil
+JSON syntax: VALID
+Artifact: KHH-002 Dambiil
+Release readiness: BLOCKED
+ - Image permission is unconfirmed
+ - Museum approval is pending
+
+------------------------------------------
+Checking: kabad
+JSON syntax: VALID
+Artifact: KHH-003 Kabad
+Release readiness: BLOCKED
+ - Image permission is unconfirmed
+ - Museum approval is pending
+
+------------------------------------------
+Checking: jalxaad
+JSON syntax: VALID
+Artifact: KHH-004 Jalxaad
+Release readiness: BLOCKED
+ - Image permission is unconfirmed
+ - Museum approval is pending
+
+------------------------------------------
+Checking: xedho
+JSON syntax: VALID
+Artifact: KHH-005 Xedho
+Release readiness: BLOCKED
+ - Image permission is unconfirmed
+ - Museum approval is pending
+

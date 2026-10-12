@@ -8,3 +8,5 @@ week2-integration/
 khayrhaye_week2_integration.zip
 waberi_integration.zip
 xedho_pilot.zip
+# Local pilot databases
+instructor-week2/**/events.sqlite3

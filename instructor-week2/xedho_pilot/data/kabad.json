@@ -1,0 +1,115 @@
+
+{
+  "artifact_id": "KHH-003",
+  "name_so": "Kabad",
+  "name_en": "Kebed/Kabad",
+  "inventory_id": 3,
+  "inventory_row": 4,
+  "status": "draft",
+
+  "approval": {
+    "reviewer": "",
+    "date": "",
+    "notes": ""
+  },
+
+  "image": {
+    "path": "assets/kabad.png",
+    "caption": "Photograph for the Kabad record; description pending review.",
+    "owner": "",
+    "permission": "unconfirmed"
+  },
+
+  "observed_visual_features": "",
+  "origin": "",
+
+  "materials": "Plant and textile fibers",
+
+  "traditional_use": "Used as a wall, doorway or decorative covering in the traditional Somali aqal dwelling.",
+
+  "cultural_significance": "",
+
+  "story_so": "Kabad waa shayga saddexaad ee ku qoran diiwaanka madxafka. Diiwaanku wuxuu ku tilmaamayaa gogol afar-gees ah oo gacanta lagu tolay, lehna midabbo kala duwan iyo naqshado joomatari ah oo xariijimo leh. Waxaa laga sameeyey fiilooyin dhir iyo kuwo dhar ah. Waxaa loo isticmaali jiray in lagu daboolo derbiga ama albaabka, ama lagu qurxiyo aqal-dhaqameedka Soomaaliyeed.",
+
+  "story_en": "Kebed/Kabad is identified as artifact 3 in the supplied inventory. It is described as a colorful rectangular handwoven mat featuring striped geometric patterns. Made from plant and textile fibers, it was traditionally used as a wall, doorway or decorative covering in the Somali aqal dwelling.",
+
+  "transcript_so": "",
+  "transcript_en": "",
+
+  "sources": [
+    {
+      "id": "INV-003",
+      "title": "Artifacts(2).xlsm - inventory ID 3, row 4",
+      "location": "Supplied practicum inventory; Sheet1 row 4",
+      "approved": false,
+      "source_category": "Draft / unverified",
+      "note": "Inventory source only; cultural and translation review pending."
+    }
+  ],
+
+  "category": "Clothing & Textiles",
+
+  "brief_description": "Colorful rectangular handwoven mat with striped geometric patterns.",
+
+  "inventory_review": {
+    "status": "matched to inventory ID 3",
+    "notes": "Original inventory name: Kebed/Kabad. Somali display name Kabad. Final spelling, interpretation and translation require review."
+  },
+
+  "passages": [
+    {
+      "source_id": "INV-003",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory describes Kebed/Kabad as a colorful rectangular handwoven mat with striped geometric patterns.",
+      "keywords": "description appearance mat patterns",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-003",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory identifies plant and textile fibers as the materials.",
+      "keywords": "material made of fibers",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-003",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "Kebed/Kabad was used as a wall, doorway or decorative covering in the traditional Somali aqal dwelling.",
+      "keywords": "use purpose dwelling doorway wall decoration",
+      "intent": "use"
+    },
+    {
+      "source_id": "INV-003",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu Kabad ku tilmaamayaa gogol afar-gees ah oo gacanta lagu tolay, lehna midabbo kala duwan iyo naqshado joomatari ah oo xariijimo leh.",
+      "keywords": "sharaxaad muuqaalka",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-003",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu sheegayaa in Kabad laga sameeyey fiilooyin dhir iyo kuwo dhar ah.",
+      "keywords": "agab ka samaysan yahay",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-003",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Kabad waxaa loo isticmaali jiray in lagu daboolo derbiga ama albaabka, ama lagu qurxiyo aqal-dhaqameedka Soomaaliyeed.",
+      "keywords": "isticmaalka aqal qurxin",
+      "intent": "use"
+    }
+  ]
+}

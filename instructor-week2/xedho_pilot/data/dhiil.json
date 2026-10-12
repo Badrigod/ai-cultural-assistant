@@ -1,0 +1,123 @@
+{
+  "artifact_id": "KHH-001",
+  "name_so": "Dhiil",
+  "name_en": "Dhiil",
+  "inventory_row": 2,
+  "status": "draft",
+
+  "approval": {
+    "reviewer": "",
+    "date": "",
+    "notes": ""
+  },
+
+  "image": {
+    "path": "assets/dhiil.png",
+    "caption": "Photograph for the Dhiil record; description pending review.",
+    "owner": "",
+    "permission": "unconfirmed"
+  },
+
+  "observed_visual_features": "",
+  "origin": "",
+
+  "materials": "Woven plant fibers",
+
+  "traditional_use": "Used to collect, carry, store and serve milk.",
+
+  "cultural_significance": "",
+
+  "story_so": "Dhiil waxaa diiwaanka lagu aqoonsaday shayga lambarkiisu yahay 1. Diiwaanku wuxuu ku tilmaamayaa weel dheer oo dhuuban oo laga sameeyey fiilooyin dhir la tolay, laguna qurxiyey xariijimo midabbo leh. Waxaa loo isticmaali jiray ururinta, qaadista, kaydinta iyo bixinta caanaha.",
+
+  "story_en": "Dhiil is identified as artifact 1 in the supplied inventory. The inventory describes it as a tall, narrow woven vessel decorated with colorful horizontal bands and a carrying cord. It is made from woven plant fibers and was traditionally used to collect, carry, store and serve milk.",
+
+  "transcript_so": "",
+  "transcript_en": "",
+
+  "sources": [
+    {
+      "id": "INV-001",
+      "title": "Artifacts.xlsm - inventory ID 1, row 2",
+      "location": "Supplied practicum inventory; Sheet1 row 2",
+      "approved": false,
+      "source_category": "Draft / unverified",
+      "note": "Inventory source only; cultural and translation review pending."
+    },
+    {
+      "id": "IMA-VIDEO-DHIIL",
+      "title": "Object of the Week: Dhiil — Islamic Museum of Australia",
+      "location": "https://www.youtube.com/watch?v=i5eHsu_hnEQ",
+      "source_category": "Published source",
+      "approved": false,
+      "note": "English audio in assets/dhiil_ima_en.m4a was recorded from this Islamic Museum of Australia video featuring Dr Mahmoud Mohammed. It describes an example in that museum's collection; connection to artifact KHH-001 has not been confirmed. Private draft for museum review."
+    }
+  ],
+
+  "inventory_id": 1,
+
+  "category": "Containers & Storage",
+
+  "brief_description": "Tall, narrow woven vessel decorated with colorful horizontal bands and carrying cord.",
+
+  "inventory_review": {
+    "status": "matched to inventory ID 1",
+    "notes": "Record prepared from the supplied inventory. Cultural interpretation and translation remain subject to review."
+  },
+
+  "passages": [
+    {
+      "source_id": "INV-001",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory describes Dhiil as a tall, narrow woven vessel decorated with colorful horizontal bands and a carrying cord.",
+      "keywords": "description appearance look",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-001",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory lists the material as woven plant fibers.",
+      "keywords": "material made of",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-001",
+      "language": "en",
+      "preview_only": true,
+      "approved": false,
+      "text": "The inventory states that Dhiil was used to collect, carry, store and serve milk.",
+      "keywords": "use used purpose milk collect carry store serve",
+      "intent": "use"
+    },
+    {
+      "source_id": "INV-001",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu Dhiil ku tilmaamayaa weel dheer oo dhuuban oo la tolay, laguna qurxiyey xariijimo midabbo leh iyo xarig lagu qaado.",
+      "keywords": "sharaxaad muuqaalka",
+      "intent": "description"
+    },
+    {
+      "source_id": "INV-001",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanka wuxuu sheegayaa in Dhiil laga sameeyey fiilooyin dhir la tolay.",
+      "keywords": "agab ka samaysan yahay",
+      "intent": "material"
+    },
+    {
+      "source_id": "INV-001",
+      "language": "so",
+      "preview_only": true,
+      "approved": false,
+      "text": "Diiwaanku wuxuu sheegayaa in Dhiil loo isticmaali jiray ururinta, qaadista, kaydinta iyo bixinta caanaha.",
+      "keywords": "isticmaalka caano ururin qaadis kaydin",
+      "intent": "use"
+    }
+  ]
+}
