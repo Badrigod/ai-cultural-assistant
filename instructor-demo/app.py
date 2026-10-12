@@ -1,64 +1,17 @@
-import streamlit as st
+from pathlib import Path
+import runpy
+import sys
 
-st.set_page_config(
-    page_title="Khayrhaye Living Heritage",
-    page_icon="🏛️",
-    layout="wide"
-)
+# Locate the actual Week 2 application.
+project_root = Path(__file__).resolve().parent.parent
+week2_folder = project_root / "instructor-week2" / "xedho_pilot"
+week2_app = week2_folder / "app.py"
 
-st.title("🏛️ Khayrhaye Living Heritage")
-st.subheader("AI Cultural Assistant + Digital Artifact Pilot")
+if not week2_app.is_file():
+    raise FileNotFoundError(f"Week 2 application not found: {week2_app}")
 
-st.info(
-    "Instructor demonstration using fictional sample data. "
-    "Original museum records and media are not published."
-)
+# Allow the Week 2 application to import core.py.
+sys.path.insert(0, str(week2_folder))
 
-st.markdown("### Project Overview")
-st.write(
-    "This practicum project integrates a cultural research "
-    "assistant with a digital museum artifact experience."
-)
-
-artifacts = {
-    "DEMO-001": "Sample Woven Container",
-    "DEMO-002": "Sample Decorative Basket",
-    "DEMO-003": "Sample Textile",
-    "DEMO-004": "Sample Cultural Ornament",
-    "DEMO-005": "Sample Heritage Object",
-}
-
-st.markdown("### Explore Sample Artifacts")
-
-selected = st.selectbox(
-    "Choose an artifact",
-    list(artifacts.keys()),
-    format_func=lambda x: artifacts[x]
-)
-
-st.write("**Artifact ID:**", selected)
-st.write("**Artifact name:**", artifacts[selected])
-st.write("**Status:** Fictional demonstration record")
-
-st.markdown("### Cultural Research Search")
-
-query = st.text_input("Search sample artifacts")
-
-if query:
-    results = [
-        (key, name)
-        for key, name in artifacts.items()
-        if query.casefold() in name.casefold()
-    ]
-
-    if results:
-        for key, name in results:
-            st.write(f"{key} — {name}")
-    else:
-        st.warning("No matching sample artifacts found.")
-
-st.divider()
-st.caption(
-    "Khayrhaye Living Heritage | Week 2 Practicum "
-    "| Public-safe instructor demonstration"
-)
+# Launch the actual Week 2 application.
+runpy.run_path(str(week2_app), run_name="__main__")
